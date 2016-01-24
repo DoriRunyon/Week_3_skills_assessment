@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Skills-HTML-CSS</title>
+        <title>{% block title %} {% endblock %}</title>
 
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
 
@@ -10,9 +10,7 @@
     <body>
         <!-- your html goes here -->
 
-        <p>Thank you {{ firstname }} {{ lastname }} for applying to be a {{ job }}. Your minimum salary requirement is ${{ salary }} dollar(s).</p>
-
-
+        {% block content %} {% endblock %}
 
     </body>
 </html>

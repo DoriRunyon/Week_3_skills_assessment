@@ -6,9 +6,10 @@ app = Flask(__name__)
 @app.route('/application-form')
 def application_form():
 
-    """Form for inputting name, desired salary and desired position"""
+    """Form for entering name, desired salary and desired position"""
 
     return render_template("application-form.html")
+
 
 @app.route('/application', methods=["POST"])
 def application():

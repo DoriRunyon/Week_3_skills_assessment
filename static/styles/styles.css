@@ -6,5 +6,9 @@ input {
 
 #lastname {
     font-weight: bold;
-    color: orange;
 }
+
+p {
+    font-size: 20px;
+}
+

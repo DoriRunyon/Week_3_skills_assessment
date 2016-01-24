@@ -1,13 +1,9 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Skills-HTML-CSS</title>
+{% extends 'base.html' %}
+{% block title %}Application Form{% endblock %}
 
-        <link rel="stylesheet" href="./styles.css">
+{% block content %}
 
-    </head>
-    <body>
+        <!doctype html>
         <!-- your html goes here -->
 
         <h1>Welcome! Tell us about yourself.</h1>
@@ -25,9 +21,9 @@
             Required Salary: <input type="text" name="salary">
             <br>
             <br>
-            <input type="radio" name="job" value="SoftwareEngineer">Software Engineer
-            <input type="radio" name="job" value="QAEngineer">QA Engineer
-            <input type="radio" name="job" value="ProductManager">Product Manager
+            <input type="radio" name="job" value="Software Engineer">Software Engineer
+            <input type="radio" name="job" value="QA Engineer">QA Engineer
+            <input type="radio" name="job" value="Product Manager">Product Manager
 
             <br>
             <br>
@@ -37,6 +33,4 @@
         </form>
 
 
-
-    </body>
-</html>
+{% endblock %}

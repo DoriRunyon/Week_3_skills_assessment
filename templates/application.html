@@ -1,18 +1,8 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Skills-HTML-CSS</title>
+{% extends 'base.html' %}
+{% block title %}Application Result{% endblock %}
 
-        <link rel="stylesheet" href="./styles.css">
+{% block content %}
 
-    </head>
-    <body>
-        <!-- your html goes here -->
+        <p>Thank you {{ firstname }} {{ lastname }} for applying to be a {{ job }}. Your minimum salary requirement is ${{ salary }} dollar(s).</p>
 
-        <h1>Thank you {{ firstname }} {{ lastname }} for applying to be a {{ job }}. Your minimum salary requirement is {{ salary }} dollars.</h1>
-
-
-
-    </body>
-</html>
+{% endblock %}
