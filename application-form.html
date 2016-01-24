@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+
+    </head>
+    <body>
+        <!-- your html goes here -->
+
+        <h1>Welcome! Tell us about yourself.</h1>
+
+        <p>Please complete the form below with your name, required salary, and type of position you're looking for.</p>
+
+        <form action="/application" method="POST">
+            <br>
+            First Name: <input type="text" name="firstname">
+            <br>
+            <br>
+            <span id="lastname">Last Name: </span><input type="text" name="lastname">
+            <br>
+            <br>
+            Required Salary: <input type="text" name="salary">
+            <br>
+            <br>
+            <input type="radio" name="job" value="Software Engineer">Software Engineer
+            <input type="radio" name="job" value="QA Engineer">QA Engineer
+            <input type="radio" name="job" value="Product Manager">Product Manager
+
+            <br>
+            <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+
+    </body>
+</html>
