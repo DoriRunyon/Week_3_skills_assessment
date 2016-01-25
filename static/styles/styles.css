@@ -8,6 +8,11 @@ input {
     font-weight: bold;
 }
 
+#instruction {
+    border: solid black 2px;
+    padding: 5px;
+}
+
 p {
     font-size: 20px;
 }
